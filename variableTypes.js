@@ -9,3 +9,11 @@ if(newVariable == newVariable2*3) {
 } else {
     console.log("Bad news!");
 }
+
+console.log("bbbbb")
+console.log("aaaaa")
+
+console.log("ccccc")
+console.log('ddddd')
+
+console.info("eeee")
