@@ -1,6 +1,11 @@
 let newVariable;
 const newVariable2 = 23;
 
-newVariable = newVariable2 + newVariable2
+newVariable = newVariable2 + newVariable2;
 
-console.log(newVariable)
+
+if(newVariable == newVariable2*3) {
+    console.log("Allright!!");
+} else {
+    console.log("Bad news!");
+}
