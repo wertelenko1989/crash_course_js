@@ -124,34 +124,39 @@ if (currentDay === "Friday" || currentDay ==="Saturday") {
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //                                  switch ... case
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-// const currentMonth = today.getMonth();
 
-currentMonth = '';
-
+const currentMonth = today.getMonth();
+//currentMonth = 6;
 
 switch (currentMonth) {
     case 11:
     case 0:
-    case 1: 
+    case 1: {
         console.log("It's winter!");
-        break;
+    }
+    break;
+
     case 2:
     case 3:
-    case 4:
+    case 4: {
         console.log("It's spring!");
-        break;
+    }
+    break;
+
     case 5:
     case 6:
-    case 7:
+    case 7: {
         console.log("It's summer!");
-        break;
+    }
+    break;
+
     case 8:
     case 9:
-    case 10:
+    case 10: {
         console.log("It's autumn!");
-        break;
+    }
+    break;
+
     default:
         console.log("What month is it now?");
 }
-
-
