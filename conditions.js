@@ -81,7 +81,7 @@ const result1 = currentTime == timeForBreakfast || currentTime == timeForLunch |
     ? "FUFF! Time to take a break and eat something!"
     : "Be strong! Wait for the right time" ;
 
-console.log(`\nOption with || and '=='\nIt's ${currentTime} o'clock. ${result1}.`);
+console.log(`Option with || and '=='\nIt's ${currentTime} o'clock. ${result1}.`);
 
 
 // Option with &&| and '!=='
@@ -89,7 +89,7 @@ const result2 = currentTime !== timeForBreakfast && currentTime !== timeForLunch
     ? "Be strong! Wait for the right time" 
     : "FUFF! Time to take a break and eat something!";
 
-console.log(`\nOption with &&| and '!=='\nIt's ${currentTime} o'clock. ${result2}.`);
+console.log(`Option with &&| and '!=='\nIt's ${currentTime} o'clock. ${result2}.`);
 
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //                                  if ... else if ... if
@@ -121,35 +121,37 @@ if (currentDay === "Friday" || currentDay ==="Saturday") {
     console.log("Not today bro... not today!");
 }
 
-
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 //                                  switch ... case
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 // const currentMonth = today.getMonth();
-const currentMonth = '';
+
+currentMonth = '';
 
 
-switch (true) {
-    case currentMonth >= 11 && currentMonth <= 1: {
+switch (currentMonth) {
+    case 11:
+    case 0:
+    case 1: 
         console.log("It's winter!");
-    }
         break;
-    case currentMonth >= 2 && currentMonth <= 4: {
+    case 2:
+    case 3:
+    case 4:
         console.log("It's spring!");
-    }
         break;
-    case currentMonth >= 5 && currentMonth <= 7: {
+    case 5:
+    case 6:
+    case 7:
         console.log("It's summer!");
-    }
         break;
-    case currentMonth >= 8 && currentMonth <= 10: {
+    case 8:
+    case 9:
+    case 10:
         console.log("It's autumn!");
-    }    
         break;
-    default: {
-        console.log("What year is it now?");
-    }
+    default:
+        console.log("What month is it now?");
 }
 
 
