@@ -128,7 +128,6 @@ if (currentDay === "Friday" || currentDay ==="Saturday") {
 const currentMonth = today.getMonth();
 //currentMonth = 6;
 
-
 switch (currentMonth) {
     case 11:
     case 0:
